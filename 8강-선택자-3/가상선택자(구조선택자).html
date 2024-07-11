@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자 (구조 선택자)</title>
+    <style>
+        #content {
+            width: 300px;
+
+        }
+
+        ul>li {
+            border: 1px solid #cccccc;
+            font-size: 20px;
+            background-color: #efefef;
+            font-weight: bold;
+            padding: 10px;
+            /*내부 공백*/
+            /* padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px; */
+            list-style: none;
+            text-align: center;
+        }
+
+        ul li:first-child,
+        ul li:last-child {
+            background-color: yellow;
+        }
+
+        ul li:first-child {
+            border-radius: 10px 10px 0 0;
+        }
+
+        ul li:last-child {
+            border-radius: 0 0 10px 10px;
+        }
+
+        ul li:nth-child(2n+1) {
+            background-color: #de9393;
+        }
+
+        ul li:nth-child(2n) {
+            background-color: yellow;
+        }
+
+        ul li:nth-child(3) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <ul>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+            <li><a href="#">메뉴5</a></li>
+            <li><a href="#">메뉴6</a></li>
+            <li><a href="#">메뉴7</a></li>
+            <li><a href="#">메뉴8</a></li>
+        </ul>
+
+
+    </div>
+</body>
+
+</html>

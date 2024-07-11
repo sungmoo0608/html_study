@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고정 그리드 레이아웃</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 960px;
+            height: 120px;
+            background-color:blue;
+            border-bottom: 1px solid black;
+        }
+        .header-text{
+            font-size: 40px;
+            text-align: center;
+            color: #ffffff;
+            line-height: 120px;
+        }
+        .content{
+            float: left;
+            width: 600px;
+            height: 400px;
+            background-color: #ffd800;
+            padding: 15px;
+        }
+        .right-side{
+            float: left;
+            width: 300px;
+            height: 400px;
+            background-color: #00ff90;
+            padding: 15px;
+        }
+        footer{
+            clear: both;
+            height: 120px;
+            background-color: #c3590a;
+            width: 960px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header-text">고정 그리드 레이아웃</h1>
+    </header>
+    <section class="content">
+        <h4>본문</h4>
+    </section>
+    <aside class="right-side">
+        <h4>사이드바</h4>
+    </aside>
+    <footer>
+        <h4>푸터</h4>
+    </footer>
+</body>
+</html>
